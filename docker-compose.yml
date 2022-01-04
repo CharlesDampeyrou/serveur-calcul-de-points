@@ -63,7 +63,7 @@ services:
 #    image : mongo
 
     # Nécessaire sur raspberry car architecture ARM
-    image: mongo@sha256:ec63238cfff22866241104a425892204c2eb76fe4eed53661b24db9bacbdf446
+    image: mongo:4.4.12-rc0-focal
     container_name: mongo
     environment:
       MONGODB_DATA_DIR: /data/db
